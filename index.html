@@ -16,7 +16,18 @@
             <div id="formulario">
                 <h1>login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">login</label>
+                    </div>
+                    <div class="campo">                     
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit" value="entrar">
+
+                </form>
             </div>
         </section>
     </main>
